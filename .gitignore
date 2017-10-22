@@ -4,6 +4,7 @@
 *.jar
 *.war
 *.ear
+
 ### Eclipse template
 *.pydevproject
 .metadata
@@ -20,8 +21,10 @@ local.properties
 
 # Eclipse Core
 .project
+.classpath
 
 logs/
 *.log
+*log.txt
 
 /target/
