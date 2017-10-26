@@ -10,6 +10,7 @@ public class TestBuilderPattern {
 	private static final Logger LOGGER = LoggerFactory.getLogger(TestBuilderPattern.class);
 	@Test
 	public void testCatBuilder() {
+		LOGGER.info("testCatBuilder()");
 		BuilderPattern builderPattern = new CatBuilder();
 		builderPattern.setName("cat");
 		builderPattern.setColour("black");
@@ -18,6 +19,7 @@ public class TestBuilderPattern {
 	}
 	@Test
 	public void testDogBuilder() {
+		LOGGER.info("testDogBuilder()");
 		BuilderPattern builderPattern = new DogBuilder();
 		builderPattern.setName("dog");
 		builderPattern.setColour("white");
