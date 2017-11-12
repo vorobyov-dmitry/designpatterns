@@ -26,6 +26,7 @@ static String[] typesOfDragon = {
 };
 @Test
 public void testFlyweight() {
+	LOGGER.info(" Start testFlyweight()");
 	Flyweight flyweight = new Flyweight();
 	for (int i = 0; i < typesOfDragon.length; i++) {
 		Dragon dragon = flyweight.produceDragon(typesOfDragon[i]);
