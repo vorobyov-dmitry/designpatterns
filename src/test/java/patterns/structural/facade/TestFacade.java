@@ -42,13 +42,11 @@ public class TestFacade {
 			doActionByFacade();
 			outputStream.flush();
 			String sFacade = outputStream.toString();
-			System.out.println(sFacade);
 			outputStream.reset();
 			doActionWithoutFacade();
 			outputStream.flush();
 			String sWithoutFacade = outputStream.toString();
-			System.out.println(sWithoutFacade);
-			assertEquals(sFacade, sWithoutFacade, "The values should be equils ");
+			assertEquals(sFacade, sWithoutFacade, "The values should be equals ");
 		} catch (Exception e) {
 			LOGGER.error(" Error closing stream ", e);
 			fail("Failed due Exception " + e.getMessage());
